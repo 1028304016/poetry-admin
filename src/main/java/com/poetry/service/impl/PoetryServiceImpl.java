@@ -74,7 +74,6 @@ public class PoetryServiceImpl  implements PoetryService {
             dictInsert.setPoetryId(poetryReturn.getId().toString());
             dictInsert.setSelectKey(dict.getSelectKey());
             dictInsert.setSelectValue(dict.getSelectValue());
-
             dictRepository.save(dictInsert);
         }
         return 1;
