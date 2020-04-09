@@ -83,13 +83,11 @@ public class PoetryServiceImpl  implements PoetryService {
     @Override
     public WxUser login(WxUser wxUser) {
         WxUser poetryReturn=null;
-
         //判断是否存在用户
         poetryReturn=wxUserRepository.queryUserByUrl(wxUser.getAvatarUrl());
         if(poetryReturn==null){
             poetryReturn=wxUserRepository.save(wxUser);
         }
-
         return poetryReturn;
     }
 }
