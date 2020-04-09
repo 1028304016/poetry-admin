@@ -1,0 +1,8 @@
+#配置根目录和访问端口
+server:
+  servlet:
+    context-path: /poetry
+    session:
+      cookie:
+        max-age:
+  port: 8088
